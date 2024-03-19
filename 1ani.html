@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.car{
+top: 200px;
+height: 250px;
+width: 400px;
+background-color: red;
+animation-name: cars;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+position: absolute;
+left:10px;
+border-radius: 0% 70% 0px 0px;
+box-shadow: -20px 20px 20px grey;
+border: 5px solid black;
+}
+@keyframes cars {
+  30%{
+    position: absolute;
+    left:500px;
+  }  
+}
+.car>.one{
+height: 150px;
+width: 150px;
+background:radial-gradient(black 80%,grey 15%);
+border-radius: 50%;
+animation-name: egg;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+position: absolute;
+top:200PX;
+left: 10px;
+}
+.one>.in{
+ height: 75px;
+width: 75px;
+background-color:red;
+border-radius: 50%;
+position: absolute;
+left:35px;
+top:35px;
+}
+@keyframes egg {
+30%{
+    position: absolute;
+    left:10px;
+    transform: rotate(200deg);
+    }
+}
+.on2{
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top:200PX;
+    left: 240px;
+    animation-name: eggs;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.on2>.in2{
+height: 75px;
+width: 75px;
+background-color:red;
+border-radius: 50%;
+position: absolute;
+left:35px;
+top:35px;
+}
+@keyframes eggs {
+    30%{
+    position: absolute;
+    left:250px;
+    transform: rotate(200deg);
+    }
+}
+.blu{
+    height: 150px;
+    width: 250px;
+    background-color: skyblue;
+    position: absolute;
+    left:142px;
+    border-radius: 0px 100% 0px 0px;
+    border:4px solid black
+}
+</style>
+<body>
+    <div class="car">
+    <div class="blu"></div>
+    <div class="on2">
+    <div class="in2"></div>
+    </div>
+    <div class="one">
+    <div class="in"></div>
+    </div>
+    </div>
+   
+</body>
+</html>
